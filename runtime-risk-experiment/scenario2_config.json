@@ -1,0 +1,29 @@
+{
+  "_comment": "Configuration for Scenario 2 pilot testing (Multi-Step Audit Pipeline). Purpose: evaluate whether PII anonymization provenance creates non-ceiling error rates without Action D metadata leakage.",
+  "experiment_id": "scenario2_pilot",
+  "scenario": "S2",
+  "pilot_token_levels": [
+    1000,
+    10000,
+    50000
+  ],
+  "risk_structures": [
+    "localized",
+    "distributed"
+  ],
+  "seeds": [
+    1,
+    2,
+    3
+  ],
+  "sample_types": [
+    "positive",
+    "negative"
+  ],
+  "temperature": 0,
+  "model": "gpt-4o-mini",
+  "model_context_limit_tokens": 127000,
+  "prompt_version": "v1.1",
+  "tokenizer": "cl100k_base",
+  "notes": "Pilot configuration for S2. Deterministic ground-truth verified by tests/test_scenario2.py. Do not run confirmatory sweeps until pilot demonstrates non-ceiling variation."
+}
