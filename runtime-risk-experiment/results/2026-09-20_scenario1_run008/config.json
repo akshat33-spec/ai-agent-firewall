@@ -1,0 +1,46 @@
+{
+  "_comment": "Experiment configuration for Scenario 1 pilot. Freeze before a formal run. Do not change model/temperature/prompt_version between experimental cells.",
+  "experiment_id": "scenario1_pilot",
+  "scenario": "S1",
+  "risk_structures": [
+    "localized",
+    "distributed"
+  ],
+  "context_levels": [
+    "short",
+    "medium",
+    "long"
+  ],
+  "seeds": [
+    1,
+    2,
+    3,
+    4,
+    5
+  ],
+  "temperature": 0,
+  "model": "gpt-4o-mini",
+  "prompt_version": "v1.0",
+  "token_targets": {
+    "short": 300,
+    "medium": 1000,
+    "long": 2500
+  },
+  "token_budget": {
+    "short": {
+      "min": 200,
+      "max": 500
+    },
+    "medium": {
+      "min": 800,
+      "max": 1200
+    },
+    "long": {
+      "min": 2000,
+      "max": 3000
+    }
+  },
+  "decision_threshold": 0.5,
+  "tokenizer": "cl100k_base",
+  "notes": "Pilot configuration. Seeds can be updated before a formal run. Do not change model, temperature, or prompt_version between experimental cells."
+}

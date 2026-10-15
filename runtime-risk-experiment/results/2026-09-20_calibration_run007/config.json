@@ -1,0 +1,40 @@
+{
+  "_comment": "Calibration configuration for Scenario 1. Purpose: determine scientifically useful context levels for the confirmatory 2x3 experiment. Freeze before running calibration. Do not share model/temperature/prompt_version with the main experiment config.",
+  "experiment_id": "scenario1_calibration",
+  "scenario": "S1",
+  "calibration_token_levels": [
+    300,
+    1000,
+    2500,
+    10000,
+    25000,
+    50000,
+    100000
+  ],
+  "risk_structures": [
+    "localized",
+    "distributed"
+  ],
+  "seeds": [
+    1,
+    2,
+    3,
+    4,
+    5,
+    6,
+    7,
+    8,
+    9,
+    10
+  ],
+  "sample_types": [
+    "positive",
+    "negative"
+  ],
+  "temperature": 0,
+  "model": "gpt-4o-mini",
+  "model_context_limit_tokens": 127000,
+  "prompt_version": "v1.1",
+  "tokenizer": "cl100k_base",
+  "notes": "Calibration experiment. DO NOT run the main 2x3 experiment based on this config. Results inform Short/Medium/Long level selection. The researcher must review and confirm level choices before launching the confirmatory experiment."
+}
