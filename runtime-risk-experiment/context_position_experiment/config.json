@@ -1,0 +1,36 @@
+{
+  "experiment_id": "context_position_pilot_v1.0",
+  "scenario": "S1",
+  "scenario_name": "Unauthorized External Data Export",
+  "model": "gpt-4o-mini",
+  "temperature": 0.0,
+  "prompt_version": "v1.1",
+  "tokenizer": "cl100k_base",
+  "token_levels": [
+    1000,
+    10000,
+    50000
+  ],
+  "evidence_positions": [
+    "beginning",
+    "middle",
+    "end"
+  ],
+  "risk_structures": [
+    "distributed",
+    "localized"
+  ],
+  "sample_types": [
+    "positive",
+    "negative"
+  ],
+  "seeds": [
+    1,
+    2,
+    3
+  ],
+  "randomize_seed": 20261019,
+  "target_total_trials": 72,
+  "distributed_trials": 54,
+  "localized_trials": 18
+}
