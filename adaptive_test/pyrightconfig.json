@@ -1,0 +1,11 @@
+{
+    "venvPath": ".",
+    "venv": "myenv",
+    "extraPaths": [
+        "./myenv/lib/python3.14/site-packages"
+    ],
+    "include": [
+        "adaptive_security_test.py",
+        "final_analysis.py"
+    ]
+}
