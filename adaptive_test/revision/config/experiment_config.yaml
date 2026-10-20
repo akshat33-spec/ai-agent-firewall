@@ -1,0 +1,25 @@
+hardware:
+  chip: "Apple M2"
+  memory_gb: 16
+
+runtime:
+  ollama_version: "latest"
+  concurrency: 1
+
+models:
+  lightweight:
+    identifier: "llama3.2:latest"
+    quantization: "INT4 (GGUF)"
+  deep:
+    identifier: "llama3:latest"
+    quantization: "INT4 (GGUF)"
+
+inference:
+  temperature: 0
+  context_limit: 4096
+  output_limit: 128
+
+evaluation:
+  dataset_version: "v1"
+  repetitions: 1
+  execution_order_seed: 42
